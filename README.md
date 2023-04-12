@@ -2,26 +2,63 @@
 
 <br />
 
-<h2>👣 Passo 01 - Abrindo o Spring Initializr no Spring Tool Suite (STS)</h2>
+<h2>👣 Passo 01 - Criando uma nova Workspace no Spring Tool Suite (STS)</h2>
 
 <br />
 
 1) Abra o STS
-2) Para abrir o **Spring Initializer**, clique no menu **File ⇨ New**, e clique na opção **Spring Starter Project**
+2) No STS, clique no Menu **File 🡪 Switch Workspace 🡪 Other...**
+
+<div align="center"><img src="https://i.imgur.com/NYX9Csu.gif" title="source: imgur.com" /></div>
+
+3. No item **Workspace**, clique no botão **Browse...** e crie a pasta **spring** na **Área de Trabalho**, como mostra a animação abaixo.
+
+<div align="center"><img src="https://i.imgur.com/FdwKDZf.gif" title="source: imgur.com" /></div>
+
+4. Deixe marcada a opção **Preferences**, para copiar as configurações atuais do Eclipse/STS na nova Workspace. Clique no botão **Launch** para concluir.
+
+<div align="center"><img src="https://i.imgur.com/iBImPhV.png" title="source: imgur.com" /></div>
+
+5. Aguarde o Eclipse/STS reiniciar.
+6. O Eclipse será inicializado sem nenhum projeto
+
+<div align="center"><img src="https://i.imgur.com/wyK0RV0.png" title="source: imgur.com" /></div>
 
 <br />
 
+<h2>👣 Passo 02 - Configurando o Terminal do Spring Tool Suite (STS)</h2>
+
+<br />
+
+1) clique no Menu **Window 🡪 Preferences**
+2) Na Guia **Terminal**, clique na opção **Local Terminal**
+3) No item **Initial Working Directory**, selecione a opção **Eclipse Workspace**, como mostra a nimação abaixo:
+
+<div align="center"><img src="https://i.imgur.com/XGohM3r.gif" title="source: imgur.com" /></div>
+
+4. Clique no botão **Apply and Close** para concluir.
+
+<br />
+
+<h2>👣 Passo 03 - Abrindo o Spring Initializr no Spring Tool Suite (STS)</h2>
+
+<br />
+
+1) Para abrir o **Spring Initializer** no STS, clique no menu **File 🡪 New**, e clique na opção **Spring Starter Project**
+
 <div align="center"><img src="https://i.imgur.com/XLRyeRq.png" title="source: imgur.com" /></div>
 
-<br /> 
+<br />
 
-<h2>👣 Passo 02 - Setup do Projeto</h2>
+<h2>👣 Passo 04 - Setup do Projeto</h2>
 
 <br />
 
 <h3>Configurações iniciais</h3>
 
 <br />
+
+1. Configure o Projeto conforme a imagem abaixo:
 
 <div align="center"><img src="https://i.imgur.com/ES3D1bA.png" title="source: imgur.com" /></div>
 
@@ -42,15 +79,23 @@
 
 <br />
 
+2. Clique no botão **Next** para continuar.
+
+<br />
+
 **Dependências**
 
 <br />
 
-Neste projeto vamos inserir 3 dependências, conforme mostra a figura abaixo:
+3. No Projeto Hello World vamos inserir 2 dependências, conforme mostra a figura abaixo:
 
 <br />
 
-<div align="center"><img src="https://i.imgur.com/xkwG1en.png" title="source: imgur.com" /></div>
+<div align="center"><img src="https://i.imgur.com/cxUHXho.png" title="source: imgur.com" /></div>
+
+<br />
+
+4. Observe que quando esta imagem foi capturada, **a versão atual do Spring era 3.0.5**, conforme indicado na imagem. Hoje a versão atual do Spring pode ser outra.
 
 <br />
 
@@ -59,10 +104,9 @@ Neste projeto vamos inserir 3 dependências, conforme mostra a figura abaixo:
 | **Spring Web**            | Fornece todas as Bibliotecas necessárias para trabalhar com o protocolo http. |
 | **Spring Boot Dev Tools** | Permite a atualização do projeto em tempo real durante o processo de Desenvolvimento da aplicação. |
 
-
 <br />
 
-Clique no botão **Finish** para concluir.
+5. Clique no botão **Finish** para concluir.
 
 <br />
 
@@ -74,7 +118,7 @@ Caso o projeto apresente algum erro no arquivo pom.xml, utilize o <b>Guia de cor
 
 
 
-<h2>👣 Passo 03 - Codar!</h2>
+<h2>👣 Passo 05 - Codar!</h2>
 
 
 
@@ -82,7 +126,7 @@ Siga as instruções do seu Instrutor!
 
 
 
-<h2>👣 Passo 04 - Executar o Projeto</h2>
+<h2>👣 Passo 06 - Executar o Projeto</h2>
 
 
 
@@ -97,3 +141,68 @@ Siga as instruções do seu Instrutor!
 4. Clique no Projeto **helloworld** (marcado em verde na imagem abaixo) e na sequência clique no ícone **Start / Restart** (marcado em amarelo na imagem abaixo) para executar o projeto.
 
    <div align="center"><img src="https://i.imgur.com/4VXoICV.png" title="source: imgur.com" /></div>
+
+<br />
+
+<h2>👣 Passo 07 - Enviar o Projeto para o Github</h2>
+
+<br />
+
+1. Clique com o botão direito do mouse sobre a **pasta do projeto helloworld**. No menu que será aberto clique na opção **Show in Local Terminal 🡪 Git Bash**, como mostra a animação abaixo:
+
+<div align="center"><img src="https://i.imgur.com/twV1Ljk.gif" title="source: imgur.com" /></div>
+
+2. Será aberto o **Terminal Git Bash**, dentro da pasta do projeto. Antes de continuar, observe se a pasta selecionada no terminal está correta, semelhante a imagem abaixo:
+
+<div align="center"><img src="https://i.imgur.com/oGJDBCE.png" title="source: imgur.com" /></div>
+
+3. No **Git Bash**, digite o comando abaixo para criar o Repositório Local dentro da pasta **Worskspace do Eclipse/STS**.
+
+```bash
+git init
+```
+
+4. Digite o comando abaixo para adicionar o Projeto na **Stage Area** do Git:
+
+
+```bash
+git add .
+```
+
+5. Na sequência, faça o commit do Projeto, através do comando abaixo:
+
+```bash
+git commit -m "Projeto Hello World"
+```
+
+6. Acesse o seu **Github** e crie um novo **Repositório**, através da opção **New repository**.
+
+7. Crie o **Repositório Remoto** chamado **spring_helloworld**.
+
+8. Na próxima tela, copie o endereço **HTTPS do Repositório Remoto**, indicado na imagem abaixo:
+
+<div align="center"><img src="https://i.imgur.com/qTlxToL.png" title="source: imgur.com" /></div>
+
+9. Volte para o Git Bash e execute o comando abaixo para conectar o seu **Repositório Local** com o seu **Repositório Remoto**, onde o endereço **https**, será o endereço do seu **Repositório Remoto**.
+
+```bash
+git remote add origin https://github.com/rafaelq80/spring_helloworld.git
+```
+
+10. Digite o comando abaixo para checar se o seu  **Repositório Local** está conectado com o seu **Repositório Remoto**:
+
+```bash
+git remote -v
+```
+
+11. Na sequência, utilize o comando abaixo, para enviar o conteúdo do **Repositório Local** com o seu **Repositório Remoto**:
+
+```bash
+git push origin main
+```
+
+12. Volte para o Github, atualize a página do seu **Repositório Remoto** e verifique se ele está semelhante a imagem abaixo:
+
+<div align="center"><img src="https://i.imgur.com/fFI1jOO.png" title="source: imgur.com" /></div>
+
+<br />
